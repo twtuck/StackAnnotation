@@ -35,14 +35,14 @@ public class MyStringStack {
     public String pop() throws NoSuchElementException {
     	//throw new NoSuchElementException();
     	String result = v.lastElement();
-    	//v.remove(result);
+    	v.remove(result);
     	System.out.println("hello");
     	return result;
 
         //return v.lastElement();
     }
     public boolean isEmpty() {
-        return v.isEmpty();
+        return false;//v.isEmpty();
     }
     public void clear() {
         v = new Vector<String> ();
